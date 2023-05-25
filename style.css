@@ -30,6 +30,7 @@ body {
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    background-color: var(--VERY-LIGHT-GRAY);
 }
 
 /*
@@ -73,4 +74,112 @@ h6 {
 #root,
 #__next {
     isolation: isolate;
+}
+
+/* END OF CSS RESET */
+
+:root {
+    --BRIGHT-ORANGE: hsl(31, 77%, 52%);
+    --DARK-CYAN: hsl(184, 100%, 22%);
+    --VERY-DARK-CYAN: hsl(179, 100%, 13%);
+
+    --VERY-LIGHT-GRAY: hsl(0, 0%, 95%);
+
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.cards {
+    display: inline-block;
+    margin: 6rem 1.6rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card {
+    padding: 3.2rem;
+}
+
+.title {
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--VERY-LIGHT-GRAY);
+    font-size: 2.65rem;
+    margin-block: 1.9rem 1.4rem;
+}
+
+.details {
+    line-height: 1.666rem;
+    margin-bottom: 1.6rem;
+}
+
+.learn-more-btn {
+    background-color: var(--VERY-LIGHT-GRAY);
+    border: 2px solid var(--VERY-LIGHT-GRAY);
+    border-radius: 10rem;
+    padding: 0.7rem 1.9rem;
+}
+
+.learn-more-btn:hover {
+    color: var(--VERY-LIGHT-GRAY);
+    cursor: pointer;
+}
+
+.sedans-btn {
+    color: var(--BRIGHT-ORANGE);
+}
+
+.sedans-btn:hover {
+    background-color: var(--BRIGHT-ORANGE);
+}
+
+.suvs-btn {
+    color: var(--DARK-CYAN);
+}
+
+.suvs-btn:hover {
+    background-color: var(--DARK-CYAN);
+}
+
+.luxury-btn {
+    color: var(--VERY-DARK-CYAN);
+}
+
+.luxury-btn:hover {
+    background-color: var(--VERY-DARK-CYAN);
+}
+
+.sedans {
+    background-color: var(--BRIGHT-ORANGE);
+}
+
+.suvs {
+    background-color: var(--DARK-CYAN);
+}
+
+.luxury {
+    background-color: var(--VERY-DARK-CYAN);
+}
+
+@media screen and (min-width: 660px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards {
+        display: flex;
+        max-width: min(90%, 61.28rem);
+        margin: 0;
+    }
+
+    .card {
+        width: 100%;
+        padding: min(5vw, 3.2rem);
+    }
+
+    .details {
+        margin-bottom: min(6vw, 5.4rem);
+    }
 }
