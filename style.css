@@ -171,7 +171,7 @@ h6 {
     .cards {
         display: flex;
         max-width: min(90%, 61.28rem);
-        margin: 2.2rem 0 0 0;
+        margin: 2.5rem 0 0 0;
     }
 
     .card {
