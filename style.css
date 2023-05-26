@@ -121,7 +121,9 @@ h6 {
 }
 
 .learn-more-btn:hover {
-    color: var(--VERY-LIGHT-GRAY);
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid white;
+    color: white;
     cursor: pointer;
 }
 
@@ -129,24 +131,12 @@ h6 {
     color: var(--BRIGHT-ORANGE);
 }
 
-.sedans-btn:hover {
-    background-color: var(--BRIGHT-ORANGE);
-}
-
 .suvs-btn {
     color: var(--DARK-CYAN);
 }
 
-.suvs-btn:hover {
-    background-color: var(--DARK-CYAN);
-}
-
 .luxury-btn {
     color: var(--VERY-DARK-CYAN);
-}
-
-.luxury-btn:hover {
-    background-color: var(--VERY-DARK-CYAN);
 }
 
 .sedans {
